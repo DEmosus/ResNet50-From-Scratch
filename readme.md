@@ -40,21 +40,21 @@ This repository is designed as:
 
 Instead of learning:
 
-\[
+$$
 H(x)
-\]
+$$
 
 ResNet learns:
 
-\[
+$$
 F(x) = H(x) - x
-\]
+$$
 
 So:
 
-\[
+$$
 H(x) = F(x) + x
-\]
+$$
 
 This enables:
 
@@ -101,9 +101,9 @@ Differences:
 - Stride `s > 1`
 - Shortcut includes Conv layer
 
-\[
+$$
 Y = \text{ReLU}(F(X) + W_s X)
-\]
+$$
 
 Used at the beginning of each new stage.
 
@@ -154,9 +154,9 @@ Preprocessing:
 
 Loss function:
 
-\[
+$$
 \mathcal{L} = -\sum\_{i=1}^{C} y_i \log(\hat{y}\_i)
-\]
+$$
 
 ---
 
